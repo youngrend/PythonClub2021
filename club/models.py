@@ -38,7 +38,7 @@ class Resource(models.Model):
     resource_date_entered=models.DateField()
     user_id=models.ForeignKey(User, on_delete=models.DO_NOTHING)
     resource_description=models.TextField()
-
+   
     def __str__(self):
         return self.resource_name
 
